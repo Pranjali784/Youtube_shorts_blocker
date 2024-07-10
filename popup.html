@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+2&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <link href="popup.css" rel="stylesheet">
+    </head>
+    <body>
+        <input type="checkbox" id="more_checkbox">
+
+        <img id="ghlink" src="./icons/github.svg" title="GitHub">
+        <div id="more_icon">
+            <img id="more" class="cantSelectable" src="./icons/more.svg">
+            <img id="close" class="cantSelectable" src="./icons/close.svg">
+        </div>
+        
+        <header>
+            <img id="logo" class="cantSelectable" src="./icons/icon.svg" enabled>
+            <h1 class="cantSelectable">YouTube Shorts Block</h1>
+            <p id="description" class="cantSelectable">Displays YouTube Shorts videos as regular videos.</p>
+        </header>
+
+        <div id="content">
+            <div id="toggle_wrap">
+                <div id="toggle_circle"></div>
+            </div>
+            <p id="version" class="cantSelectable" title="Show release notes">v.</p>
+            <div id="settings">
+                <div class="settings_column">
+                    <input id="hideShortTabInput" type="checkbox">
+                    <label for="hideShortTabInput" class="cantSelectable">Hide "Shorts" tab in the left menu</label>
+                </div>
+                <div class="settings_column">
+                    <input id="hideShortVideoInput" type="checkbox">
+                    <label for="hideShortVideoInput" class="cantSelectable">Hide Shorts videos</label>
+                </div>
+                <div id="warn" class="settings_column cantSelectable">
+                    <div id="warn_col" class="warn_msg_cmn"></div>
+                    <div id="warn_msg" class="warn_msg_cmn"></div>
+                    <br>
+                    "<a id="warn_fb" class="warn_msg_cmn" target="_blank"></a>"
+                    <div id="warn_or" class="warn_msg_cmn">or</div>
+                    "<a id="warn_pr" class="warn_msg_cmn" href="https://github.com/Dedsec0098/Youtube_Shorts_Blocker.git" target="_blank">Pull Request</a>"
+                </div>
+            </div>
+        </div>
+        <script src="popup.js"></script>
+    </body>
+</html>
